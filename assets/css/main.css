@@ -16,7 +16,7 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
+footer, header, hgroup, menu, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -24,6 +24,14 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
+nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-size: 80%;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -617,6 +625,23 @@ input, select, textarea {
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+		}
+
+		.icon.brands.fa-linkedin {
+			display: inline-flex; /* Use flexbox for positioning */
+			align-items: center; /* Center content vertically */
+			justify-content: center; /* Center content horizontally */
+			width: 40px; /* Set a fixed width */
+			height: 40px; /* Set a fixed height */
+			border-radius: 50%; /* Makes the element a circle */
+			border: 1px solid white; /* Adds a white border */
+			padding: .5rem; /* Adjust padding as needed */
+		}
+		
+		/* Styles for the Font Awesome icon within the LinkedIn icon container */
+		.icon.brands.fa-linkedin::before {
+			position: relative; /* Set position to relative */
+			z-index: 1; /* Ensure the icon is above the border */
 		}
 
 		.icon > .label {
@@ -1421,7 +1446,7 @@ input, select, textarea {
 					min-width: 7.5rem;
 					height: 2.75rem;
 					line-height: 2.75rem;
-					padding: 0 1.25rem 0 1.45rem;
+					padding: 0 1rem 0 1rem;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;

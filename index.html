@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://www.google.com/recaptcha/enterprise.js?render=6Lfxe-gpAAAAAOLlZR3qDJY4oUqnaV4I72FdG1z1"></script>
 	</head>
 	<body class="is-preload">
 
@@ -31,10 +32,9 @@
 						<nav>
 							<ul>
 								<li><a href="#education">Education</a></li>
-								<li><a href="#workexp">Work Experience</a></li>
+								<li><a href="#workexp">Work</a></li>
 								<li><a href="#projects">Projects</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<!--<li><a href="#contact">Contact</a></li>-->
 							</ul>
 						</nav>
 					</header>
@@ -144,6 +144,18 @@
 										<li><input type="submit" value="Send Message" class="primary" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
+									<button class="g-recaptcha"
+									  data-sitekey="6Lfxe-gpAAAAAOLlZR3qDJY4oUqnaV4I72FdG1z1"
+									  data-callback='onSubmit'
+									  data-action='submit'>
+									Submit
+								  </button>
+									<input type="submit" value="Submit">
+									<script>
+										function onSubmit(token) {
+										  document.getElementById("demo-form").submit();
+										}
+									  </script>
 								</form>
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -399,7 +411,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<a href="www.linkedin.com/in/mharie-brigham-a50b91295" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
 					</footer>
 
 			</div>
